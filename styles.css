@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #191816;
+    display: flex;
+    flex-flow: row;
+}
+
+main {
+    width: 50%;
+}
+
+#side-image {
+    width: 50%;
+}
+
+#logo {
+    width: 115px;
+    height: 28px;
+    margin: 40px 40px 125px;
+}
+
+#form-background {
+    width: 570px;
+    height: 512px;
+    background: #24221F;
+    border-radius: 4px;
+    color: white;
+
+    margin: auto;
+    padding: 55px 119px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-flow: row wrap;
+}
+
+legend {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #D4CCB6;
+    margin-left: 10px;
+}
+
+header p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #AFB6C2;
+
+    margin-top: 5px;
+    text-align: left;
+
+}
+
+.campoContainer {
+    margin-top: 27px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+}
+
+.campoContainer img:not(#eye) {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    cursor: pointer;
+}
+
+input[type="email"],
+input[type="password"] {
+    box-sizing: border-box;
+    height: 44px;
+    width: 100%;
+    margin-top: 5px;
+
+    border: 1px solid #868686;
+    border-radius: 4px;
+    background: none;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #A9AFB9;
+    padding: 12px 37px;
+
+    display: flex;
+}
+
+#eye {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    cursor: pointer;
+}
+
+/* campo senha */
+.campoContainer:nth-child(3) {
+    margin: 20px 0;
+}
+
+/* lembre-me */
+#lembremeTxt {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #A9AFB9;
+    height: 20px;
+
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+}
+
+input[type="checkbox"] {
+    width: 21px;
+    height: 21px;
+    border: 1px solid #868686;
+    border-radius: 4px;
+
+    margin-right: 5px;
+
+    cursor: pointer;
+    appearance: none;
+
+    position: relative;
+}
+
+/* esqueci minha senha */
+a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #FFC632;
+
+    text-decoration: none;
+
+
+}
+
+label+a {
+    float: right;
+}
+
+p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #FFC632;
+    text-align: center;
+
+    float: left;
+    width: 100%;
+}
+
+button {
+    width: 334px;
+    height: 51px;
+    margin: 20px 0 14px 0;
+    float: left;
+
+    background: #FFC632;
+    border: 0 solid;
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+
+    letter-spacing: 0.015em;
+
+    color: #473404;
+}
+
+.checkbox:before {
+    content: '';
+    opacity: 0;
+    transition: all 100ms ease-in-out;
+}
+
+.checkbox:before {
+    width: 100%;
+    height: 100%;
+    background: #FFC632;
+    background-image: url(./images/check.svg);
+    background-repeat: no-repeat;
+
+    float: right;
+}
+
+.checkbox:checked:before {
+    opacity: 1;
+}

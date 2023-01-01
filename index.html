@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form CSS</title>
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+</head>
+
+<body>
+    <main>
+        <img src="./images/logo.svg" alt="" id="logo">
+        <div id="form-background">
+            <form action="">
+                <header>
+                    <img src="./images/log-in.svg" alt="">
+                    <legend>Faça seu login</legend>
+                    <p>Entre com suas informações de cadastro.</p>
+                </header>
+
+                <div class="campoContainer">
+                    <label>Email</label>
+                    <img src="./images/mail.svg"></img>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email">
+                </div>
+
+                <div class="campoContainer">
+                    <label>Senha</label>
+                    <img src="./images/lock.svg"></img>
+                    <input type="password" name="password" id="password" placeholder="Digite sua senha">
+                    <img src="./images/eye.svg" id="eye"></img>
+                </div>
+
+                <label for="lembreMe" id="lembremeTxt">
+                    <input type="checkbox" name="lembreMe" class="checkbox">
+                    Lembre-me
+                </label>
+
+                <a>Esqueci minha senha</a>
+                <button>ENTRAR</button>
+                <P>Não tem uma conta? <a href="#">Registre-se</a></P>
+
+            </form>
+        </div>
+    </main>
+    <img src="./images/side-image.jpg" id="side-image">
+
+</body>
+
+</html>
