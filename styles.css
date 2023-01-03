@@ -8,14 +8,15 @@ body {
     background: #191816;
     display: flex;
     flex-flow: row;
+    justify-content: space-between;
 }
 
 main {
-    width: 50%;
+    flex: 1;
 }
 
 #side-image {
-    width: 50%;
+    flex: 1
 }
 
 #logo {
@@ -25,20 +26,19 @@ main {
 }
 
 #form-background {
-    width: 570px;
     height: 512px;
+    min-width: 572px;
     background: #24221F;
     border-radius: 4px;
     color: white;
 
-    margin: auto;
+    margin: 0 74px;
     padding: 55px 119px;
 }
 
 header {
     display: flex;
     align-items: center;
-    justify-content: left;
     flex-flow: row wrap;
 }
 
@@ -64,9 +64,9 @@ header p {
 
     margin-top: 5px;
     text-align: left;
-
 }
 
+/* campo de email e senha */
 .campoContainer {
     margin-top: 27px;
     font-family: 'Poppins';
@@ -77,24 +77,18 @@ header p {
     position: relative;
 }
 
-.campoContainer img:not(#eye) {
-    position: absolute;
-    bottom: 12px;
-    left: 12px;
-    cursor: pointer;
-}
-
 input[type="email"],
 input[type="password"] {
-    box-sizing: border-box;
     height: 44px;
     width: 100%;
     margin-top: 5px;
 
+    box-sizing: border-box;
     border: 1px solid #868686;
     border-radius: 4px;
     background: none;
 
+    /* texto do placeholder */
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -107,11 +101,44 @@ input[type="password"] {
     display: flex;
 }
 
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border: 1px solid #FFC632;
+    box-shadow: 0px 0px 0px 2px #FFDE88;
+    outline: 0;
+}
+
+/* Icones do campo de email e senha */
+.campoContainer div,
 #eye {
     position: absolute;
     bottom: 12px;
+    width: 20px;
+    height: 20px;
+}
+
+.campoContainer div {
+    left: 12px;
+}
+
+#eye {
     right: 12px;
-    cursor: pointer;
+}
+
+#emailImg {
+    background-image: url(./images/mail.svg);
+}
+
+#lockImg {
+    background-image: url(./images/lock.svg);
+}
+
+input[type="email"]:focus+#emailImg {
+    background-image: url(./images/mail-focus.svg);
+}
+
+input[type="password"]:focus~#lockImg {
+    background-image: url(./images/lock-focus.svg);
 }
 
 /* campo senha */
@@ -124,16 +151,18 @@ input[type="password"] {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
 
     color: #A9AFB9;
+
+    width: 120px;
     height: 20px;
 
-    width: auto;
     display: flex;
-    flex-wrap: wrap;
-    float: left;
+}
+
+span {
+    display: flex;
+    justify-content: space-between;
 }
 
 input[type="checkbox"] {
@@ -161,14 +190,9 @@ a {
     color: #FFC632;
 
     text-decoration: none;
-
-
 }
 
-label+a {
-    float: right;
-}
-
+/* Não tem uma conta? Registre-se */
 p {
     font-family: 'Poppins';
     font-style: normal;
@@ -178,25 +202,18 @@ p {
 
     color: #FFC632;
     text-align: center;
-
-    float: left;
-    width: 100%;
 }
 
 button {
-    width: 334px;
+    width: 100%;
+    max-width: 334px;
     height: 51px;
-    margin: 20px 0 14px 0;
-    float: left;
+    margin: 20px auto 14px auto;
 
     background: #FFC632;
     border: 0 solid;
     border-radius: 4px;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     padding: 12px 24px;
 
     font-family: 'Poppins';
@@ -208,6 +225,9 @@ button {
     letter-spacing: 0.015em;
 
     color: #473404;
+
+    display: flex;
+    justify-content: center;
 }
 
 .checkbox:before {

@@ -15,8 +15,6 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-
 </head>
 
 <body>
@@ -27,28 +25,31 @@
                 <header>
                     <img src="./images/log-in.svg" alt="">
                     <legend>Faça seu login</legend>
+                    <br>
                     <p>Entre com suas informações de cadastro.</p>
                 </header>
 
                 <div class="campoContainer">
                     <label>Email</label>
-                    <img src="./images/mail.svg"></img>
                     <input type="email" name="email" id="email" placeholder="Digite seu email">
+                    <div id="emailImg"></div>
                 </div>
 
                 <div class="campoContainer">
                     <label>Senha</label>
-                    <img src="./images/lock.svg"></img>
                     <input type="password" name="password" id="password" placeholder="Digite sua senha">
+                    <div id="lockImg"></div>
                     <img src="./images/eye.svg" id="eye"></img>
                 </div>
 
-                <label for="lembreMe" id="lembremeTxt">
-                    <input type="checkbox" name="lembreMe" class="checkbox">
-                    Lembre-me
-                </label>
+                <span>
+                    <label for="lembreMe" id="lembremeTxt">
+                        <input type="checkbox" name="lembreMe" class="checkbox">
+                        Lembre-me
+                    </label>
 
-                <a>Esqueci minha senha</a>
+                    <a>Esqueci minha senha</a>
+                </span>
                 <button>ENTRAR</button>
                 <P>Não tem uma conta? <a href="#">Registre-se</a></P>
 
