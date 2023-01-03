@@ -3,7 +3,7 @@ Neste desafio foi criado um formulário de login.
 
 [🔗 Clique aqui para acessar](https://gabrielli-lima.github.io/LoginFormCSS/)
 
-![preview](./.github/preview.png)
+![preview](./.github/preview2.png)
 
 ## 🛠️ Tecnologias
 - HTML
